@@ -1,7 +1,7 @@
-##Lab Session #01
+## Lab Session #01 #
 
 Students: 
 
-* Surname_1, First_name_1
+* Martínez Martínez, Guillermo
 
-* Surname_2, First_name_2
+* Arribas Pardo, Fèlix
