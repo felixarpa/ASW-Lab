@@ -22,12 +22,18 @@ public class SimpleFluentClient {
 		List<NameValuePair> form = Form.form().add("author", "Simple Flient Client").add("tweet_text", "This is a tweet").build();
 		Response response = Request.Post(URI + "wot").addHeader(ACCEPT, TEXT_PLAIN).bodyForm(form).execute();
 		// Print the new Tweet ID
-    	System.out.println(response.returnContent().asString());
-    	/* End of code for Task #4 */
+		String twid = response.returnContent().asString();
+    	System.out.println(twid);
     	
     	System.out.println(Request.Get(URI).addHeader(ACCEPT, TEXT_PLAIN).execute().returnContent());
     	
-    	/* Insert code for Task #5 here */
+    	/* Code for Task #5 */
+    	// Give a random header
+		Request.Post(URI + "wot").addHeader(ACCEPT, TEXT_PLAIN).bodyForm(Form.form().add("twid", twid).build()).execute();
+		System.out.println(String.format("Tweet #%s has been deleted", twid));
+
+    	System.out.println(Request.Get(URI).addHeader(ACCEPT, TEXT_PLAIN).execute().returnContent());
+    	
     }
 }
 
