@@ -21,6 +21,8 @@ public class WoTServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	Locale currentLocale = new Locale("en");
 	String ENCODING = "ISO-8859-1";
+	private static final String ACCEPT = "Accept";
+	private static final String TEXT_PLAIN = "text/plain";
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -36,8 +38,8 @@ public class WoTServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			Vector<Tweet> tweets = Database.getTweets();
-			String acceptHeader = request.getHeader("Accept");
-			if (acceptHeader.equals("text/plain")) {
+			String acceptHeader = request.getHeader(ACCEPT);
+			if (acceptHeader.equals(TEXT_PLAIN)) {
 				printPLAINresult(tweets, request, response);
 			} else {
 				printHTMLresult(tweets, request, response);
@@ -50,7 +52,7 @@ public class WoTServlet extends HttpServlet {
 	}
 
 	private void printPLAINresult(Vector<Tweet> tweets, HttpServletRequest req, HttpServletResponse res) throws IOException {
-		res.setContentType("text/plain");
+		res.setContentType(TEXT_PLAIN);
 		res.setCharacterEncoding(ENCODING);
 		PrintWriter out = res.getWriter();
 		for (Tweet tweet: tweets) {
@@ -64,17 +66,23 @@ public class WoTServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		// This method does NOTHING but redirect to the main page
 		String author = request.getParameter("author");
 		String tweet = request.getParameter("tweet_text");
+		Long id = 0L;
 		
 		try {
-			Database.insertTweet(author, tweet);
+			id = Database.insertTweet(author, tweet);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 
-		response.sendRedirect(request.getContextPath());
+		String acceptHeader = request.getHeader(ACCEPT);
+		if (acceptHeader.equals(TEXT_PLAIN)) {
+			PrintWriter out = response.getWriter();
+			out.println(String.valueOf(id));
+		} else {
+			response.sendRedirect(request.getContextPath());
+		}
 	}
 
 	private void printHTMLresult (Vector<Tweet> tweets, HttpServletRequest req, HttpServletResponse res) throws IOException
