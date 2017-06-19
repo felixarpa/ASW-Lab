@@ -19,7 +19,7 @@ function CurrencyConverter($from_Currency,$to_Currency,$amount) {
 $server->addFunction("FahrenheitToCelsius");
 
 // Task #3 -> Uncomment the following line:
-// $server->addFunction("CurrencyConverter");
+$server->addFunction("CurrencyConverter");
 
 $server->handle();
  

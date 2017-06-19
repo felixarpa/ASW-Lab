@@ -24,14 +24,14 @@ try{
 	 echo $sClient->__getLastResponseHeaders();
 	 echo "\n";
 	 echo xmlpp($sClient->__getLastResponse());
+	 // no m'agraden els punts per concatenar ¯\_ツ_/¯
 	
 	// Task #3: Uncomment the following lines:
-	/* $inCur = "EUR";
+	$inCur = "EUR";
 	$outCur = "CNY";
 	$inAmount = 100;
 	$outAmount = $sClient->CurrencyConverter($inCur,$outCur,$inAmount);
 	echo "\n   ", $inAmount, " ",$inCur, " ==> ",$outAmount, " ",$outCur,"\n\n";
-	*/
 	
 	// Task #4: Call CurrencyConverterPlus and display its result:
 	
