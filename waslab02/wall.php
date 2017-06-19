@@ -40,7 +40,14 @@ switch ($_SERVER['REQUEST_METHOD']) {
 	case 'DELETE':
 	   
 	    // To be implemented (See Task #5)
-		
+		$id = $_GET["twid"];
+		$deletionResult = $dbhandler->deleteTweet($id);
+		$result = "success";
+		if ($deletionResult == 0) {
+            $result = "fail";
+        }
+        $response = new SimpleXMLElement('<response><deletion id="' . $id . '">' . $result . '</deletion></response>');
+		echo $response->asXML();
 		exit;
 		
 } 

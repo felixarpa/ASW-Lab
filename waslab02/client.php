@@ -18,6 +18,19 @@ echo $resp;
 
 echo "\n";
 
+$opts = array('http' =>
+    array(
+        'method'  => 'DELETE',
+        'header'  => 'Content-type: text/xml'
+    )
+);
+
+$context = stream_context_create($opts);
+$resp = file_get_contents($URI . '?twid=10', false, $context);
+echo $resp;
+
+echo "\n";
+
 $resp = file_get_contents($URI);
 echo $http_response_header[0], "\n"; // Print the first HTTP response header
 $tweets = new SimpleXMLElement($resp);
