@@ -9,12 +9,21 @@ try{
 	$fahrenheitTemp = "63.5";
 	$response = $sClient->FahrenheitToCelsius($fahrenheitTemp);
 
-	echo "\n   ";
+	echo "\n\n   ";
 	echo $fahrenheitTemp, ' Fahrenheit ==> ', $response["cresult"], ' Celsius ';
 	echo "[Server TimeStamp: ", date('l jS \of F Y @ h:i:s A',strtotime($response["timeStamp"])), "]\n";
 
 	/* Task #2: Write your code here. Use the function xmlpp (implemented below)
 	 * to print the 2 SOAP messages (request and response).*/
+	 
+	 echo "\n\n----------- HTTP REQUEST :\n";
+	 echo $sClient->__getLastRequestHeaders();
+	 echo "\n";
+	 echo xmlpp($sClient->__getLastRequest());
+	 echo "\n\n\n----------- HTPP RESPONSE :\n";
+	 echo $sClient->__getLastResponseHeaders();
+	 echo "\n";
+	 echo xmlpp($sClient->__getLastResponse());
 	
 	// Task #3: Uncomment the following lines:
 	/* $inCur = "EUR";
