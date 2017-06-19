@@ -19,6 +19,9 @@ switch ($_SERVER['REQUEST_METHOD']) {
 	case 'POST': 
 		
 		// To be implemented (See Task #2)
+		$author = $_POST["author"];
+		$tweetText = $_POST["tweet_text"];
+		$dbhandler->insertTweet($author, $tweetText);
 		
 		break;
 		
