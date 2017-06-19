@@ -63,10 +63,13 @@ function getTweets() {
 	req.onreadystatechange = function() {
 		if (req.readyState == 4 && req.status == 200) {
 			var tweet_list = req.responseText;
-			/*
-* TASK #2 -->
-			*/
-			document.getElementById("tweet_list").innerHTML = tweet_list;
+			var tweets = JSON.parse(tweet_list);
+			var tweets_html = "";
+			for (var i = 0; i < tweets.length; i++) {
+				var tt = tweets[i];
+				tweets_html += getTweetHTML(tt, "like");
+			}
+			document.getElementById("tweet_list").innerHTML = tweets_html;
 		};
 	};
 	req.send(null); 
