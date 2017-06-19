@@ -1,1 +1,289 @@
+HTTP/1.1 200 OK
 
+x-frame-options:
+    SAMEORIGIN
+last-modified:
+    Tue, 21 Mar 2017 16:07:31 GMT
+status:
+    200 OK
+Content-Length:
+    5757
+x-response-time:
+    108
+Connection:
+    keep-alive
+x-transaction:
+    005d2f0300eaa26a
+Server:
+    tsa_b
+pragma:
+    no-cache
+cache-control:
+    no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+x-connection-hash:
+    e0db721ff050636ce2b29cece2e48496
+x-xss-protection:
+    1; mode=block
+x-content-type-options:
+    nosniff
+expires:
+    Tue, 31 Mar 1981 05:00:00 GMT
+Date:
+    Tue, 21 Mar 2017 16:07:31 GMT
+set-cookie:
+    lang=es; Path=/
+set-cookie:
+    guest_id=v1%3A149011245135914853; Domain=.twitter.com; Path=/; Expires=Thu, 21-Mar-2019 16:07:31 UTC
+content-disposition:
+    attachment; filename=json.json
+x-twitter-response-tags:
+    BouncerCompliant
+strict-transport-security:
+    max-age=631138519
+x-access-level:
+    read-write-directmessages
+Content-Type:
+    application/json;charset=utf-8
+
+
+{
+  "created_at": "Tue Mar 21 16:07:31 +0000 2017",
+  "id": 844218925680414700,
+  "id_str": "844218925680414721",
+  "text": "RT @cfarre: .@JimMcHugh keynotes on the current state of artificial intelligence: The State of AI - https://t.co/tre6YFO8Bw via @InfoQ",
+  "truncated": false,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [
+      {
+        "screen_name": "cfarre",
+        "name": "Carles Farré",
+        "id": 18244676,
+        "id_str": "18244676",
+        "indices": [
+          3,
+          10
+        ]
+      },
+      {
+        "screen_name": "JimMcHugh",
+        "name": "Jim McHugh",
+        "id": 14852810,
+        "id_str": "14852810",
+        "indices": [
+          13,
+          23
+        ]
+      },
+      {
+        "screen_name": "InfoQ",
+        "name": "InfoQ",
+        "id": 14073560,
+        "id_str": "14073560",
+        "indices": [
+          128,
+          134
+        ]
+      }
+    ],
+    "urls": [
+      {
+        "url": "https://t.co/tre6YFO8Bw",
+        "expanded_url": "https://www.infoq.com/presentations/state-ai-2017",
+        "display_url": "infoq.com/presentations/…",
+        "indices": [
+          100,
+          123
+        ]
+      }
+    ]
+  },
+  "source": "<a href="https://apigee.com/console/twitter" rel="nofollow">Apigee's API Console</a>",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 574701595,
+    "id_str": "574701595",
+    "name": "Fèlix Ap",
+    "screen_name": "felixarpa",
+    "location": "",
+    "description": "Vaya vayita... ¿Que oyen mis ojos?",
+    "url": null,
+    "entities": {
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 52,
+    "friends_count": 47,
+    "listed_count": 0,
+    "created_at": "Tue May 08 18:44:07 +0000 2012",
+    "favourites_count": 1,
+    "utc_offset": 3600,
+    "time_zone": "Madrid",
+    "geo_enabled": false,
+    "verified": false,
+    "statuses_count": 4,
+    "lang": "es",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "C0DEED",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/727271199/b7b256b09668b121fedafdd609fee243.jpeg",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/727271199/b7b256b09668b121fedafdd609fee243.jpeg",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/642635909217783808/ly2rP78q_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/642635909217783808/ly2rP78q_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/574701595/1442051336",
+    "profile_link_color": "4A913C",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "retweeted_status": {
+    "created_at": "Mon Mar 20 16:23:59 +0000 2017",
+    "id": 843860683037052900,
+    "id_str": "843860683037052928",
+    "text": ".@JimMcHugh keynotes on the current state of artificial intelligence: The State of AI - https://t.co/tre6YFO8Bw via @InfoQ",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "JimMcHugh",
+          "name": "Jim McHugh",
+          "id": 14852810,
+          "id_str": "14852810",
+          "indices": [
+            1,
+            11
+          ]
+        },
+        {
+          "screen_name": "InfoQ",
+          "name": "InfoQ",
+          "id": 14073560,
+          "id_str": "14073560",
+          "indices": [
+            116,
+            122
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/tre6YFO8Bw",
+          "expanded_url": "https://www.infoq.com/presentations/state-ai-2017",
+          "display_url": "infoq.com/presentations/…",
+          "indices": [
+            88,
+            111
+          ]
+        }
+      ]
+    },
+    "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 18244676,
+      "id_str": "18244676",
+      "name": "Carles Farré",
+      "screen_name": "cfarre",
+      "location": "41.38846, 2.11383",
+      "description": "Tenured Assistant Professor @la_UPC. Member of @gessi_upc. Like it or not, we live in interesting times.",
+      "url": "https://t.co/vTK5ecmPoS",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/vTK5ecmPoS",
+              "expanded_url": "http://www.essi.upc.edu/~farre/",
+              "display_url": "essi.upc.edu/~farre/",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 268,
+      "friends_count": 165,
+      "listed_count": 33,
+      "created_at": "Fri Dec 19 16:18:57 +0000 2008",
+      "favourites_count": 261,
+      "utc_offset": 3600,
+      "time_zone": "Rome",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3914,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/653851135443369984/nQ0qwAfh.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/653851135443369984/nQ0qwAfh.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/819224262238150656/UMs-1V1I_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/819224262238150656/UMs-1V1I_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/18244676/1489866800",
+      "profile_link_color": "1B95E0",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "regular"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 16,
+    "favorite_count": 3,
+    "favorited": false,
+    "retweeted": true,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "is_quote_status": false,
+  "retweet_count": 16,
+  "favorite_count": 0,
+  "favorited": false,
+  "retweeted": true,
+  "possibly_sensitive": false,
+  "lang": "en"
+}
