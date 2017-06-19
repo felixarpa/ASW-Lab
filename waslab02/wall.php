@@ -28,7 +28,13 @@ switch ($_SERVER['REQUEST_METHOD']) {
 	case 'PUT':
 		
 		// To be implemented (See Task #4)
-		
+		$input = file_get_contents('php://input');
+		$tweet = new SimpleXMLElement($input);
+		$author = $tweet->author;
+		$tweetText = $tweet->text;
+		$newTweetId = $dbhandler->insertTweet($author, $tweetText);
+		$resp = new SimpleXMLElement('<response><tweetid author="Test Author">' . $newTweetId . '</tweetid></response>');
+		echo $resp->asXML();
         exit;
 		
 	case 'DELETE':
