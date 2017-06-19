@@ -72,18 +72,36 @@ function getTweets() {
 			document.getElementById("tweet_list").innerHTML = tweets_html;
 		};
 	};
-	req.send(null); 
+	req.send(null);
+	
 };
 
 
 function tweetHandler() {
 	var author = document.getElementById("tweet_author").value;
 	var text = document.getElementById("tweet_text").value;
-	/*
-* TASK #3 -->
-				*/
-	var mes1 = "Someone ({0}) wants to insert a new tweet ('{1}'),\n but this feature is not implemented yet!";
-	alert(mes1.format(author, text));
+	
+	req = new XMLHttpRequest();
+	req.open('POST', tweetsURI, /*async*/true);
+	req.onreadystatechange = function() {
+		if (req.readyState == 4 && req.status == 200) {
+			var tweet = req.responseText;
+			var nt = JSON.parse(tweet);
+			var currentHTML = document.getElementById("tweet_list").innerHTML;
+			document.getElementById("tweet_list").innerHTML = getTweetHTML(nt, "Delete") + currentHTML;
+		}
+	};
+	req.setRequestHeader("Content-Type","application/json");
+	var tweet = JSON.stringify(
+			{
+				author: author,
+				text: text
+			}
+	);
+	req.send(tweet);
+	
+	//var mes1 = "Someone ({0}) wants to insert a new tweet ('{1}'),\n but this feature is not implemented yet!";
+	//alert(mes1.format(author, text));
 	
 	// clear form fields
 	document.getElementById("tweet_author").value = "";
