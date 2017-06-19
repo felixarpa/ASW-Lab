@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="WSLabService"
+    targetNamespace="http://localhost/WSLabService.wsdl"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://localhost/WSLabService.wsdl"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsd1="http://localhost/schema">
+
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://localhost/schema"
+            xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+            xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			
+			<!-- ComplexType Definitions -->
+			
+         </schema>
+    </types>
+ 
+    <message name="FahrenheitToCelsiusRequest">
+        <part name="fdegree" type="xsd:double"/>
+    </message>
+    <message name="FahrenheitToCelsiusResponse">
+        <part name="cresult" type="xsd:double"/>
+		<part name="timeStamp" type="xsd:date"/>
+    </message>
+ 
+    <portType name="WSLab_PortType">
+        <operation name="FahrenheitToCelsius">
+            <input message="tns:FahrenheitToCelsiusRequest"/>
+            <output message="tns:FahrenheitToCelsiusResponse"/>
+        </operation>
+    </portType>
+ 
+    <binding name="WSLab_Binding" type="tns:WSLab_PortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="FahrenheitToCelsius">
+            <soap:operation soapAction="FahrenheitToCelsius"/>
+            <input>
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="urn:examples:wslabservice"
+                    use="encoded"/>
+            </input>
+            <output>
+                <soap:body
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+                    namespace="urn:examples:wslabservice"
+                    use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+ 
+    <service name="WSLab_Service">
+        <documentation>WSDL File for WSLabService</documentation>
+        <port binding="tns:WSLab_Binding" name="WSLab_Port">
+            <soap:address location="http://localhost:8080/waslab04/server_04.php"/>
+        </port>
+    </service>
+</definitions>
