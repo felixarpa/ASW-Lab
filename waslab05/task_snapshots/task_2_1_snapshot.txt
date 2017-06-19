@@ -1,1 +1,377 @@
+HTTP/1.1 200 OK
 
+x-frame-options:
+    SAMEORIGIN
+x-rate-limit-remaining:
+    899
+last-modified:
+    Tue, 21 Mar 2017 15:45:41 GMT
+status:
+    200 OK
+Content-Length:
+    7263
+x-response-time:
+    50
+Connection:
+    keep-alive
+x-transaction:
+    002faf7e005cc805
+Server:
+    tsa_b
+pragma:
+    no-cache
+cache-control:
+    no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+x-connection-hash:
+    306fb4bce5ff32b161d28c14bb219e83
+x-xss-protection:
+    1; mode=block
+x-content-type-options:
+    nosniff
+x-rate-limit-limit:
+    900
+expires:
+    Tue, 31 Mar 1981 05:00:00 GMT
+Date:
+    Tue, 21 Mar 2017 15:45:41 GMT
+set-cookie:
+    lang=es; Path=/
+set-cookie:
+    guest_id=v1%3A149011114129029592; Domain=.twitter.com; Path=/; Expires=Thu, 21-Mar-2019 15:45:41 UTC
+x-rate-limit-reset:
+    1490112041
+content-disposition:
+    attachment; filename=json.json
+x-twitter-response-tags:
+    BouncerCompliant
+strict-transport-security:
+    max-age=631138519
+x-access-level:
+    read-write-directmessages
+Content-Type:
+    application/json;charset=utf-8
+
+
+[
+  {
+    "id": 314408213,
+    "id_str": "314408213",
+    "name": "Emil Ahangarzadeh",
+    "screen_name": "Ahangarzadeh",
+    "location": "San Diego County, CA",
+    "description": "There are no political solutions. Only technological ones. Everything else is propoganda. #tech #entertainment #cybernetics #education #leadership",
+    "url": "https://t.co/GnmklF0BLB",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/GnmklF0BLB",
+            "expanded_url": "http://emilahangarzadeh.com",
+            "display_url": "emilahangarzadeh.com",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 13064,
+    "friends_count": 3914,
+    "listed_count": 641,
+    "created_at": "Fri Jun 10 06:22:57 +0000 2011",
+    "favourites_count": 474,
+    "utc_offset": -25200,
+    "time_zone": "Pacific Time (US & Canada)",
+    "geo_enabled": true,
+    "verified": false,
+    "statuses_count": 7428,
+    "lang": "en",
+    "status": {
+      "created_at": "Mon Mar 20 19:58:45 +0000 2017",
+      "id": 843914728632016900,
+      "id_str": "843914728632016896",
+      "text": "Waldorf vs. Montessori https://t.co/jRbut5hbCN #edleadership #edchat",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "edleadership",
+            "indices": [
+              47,
+              60
+            ]
+          },
+          {
+            "text": "edchat",
+            "indices": [
+              61,
+              68
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/jRbut5hbCN",
+            "expanded_url": "http://blog.sgws.org/waldorf-vs-montessori/",
+            "display_url": "blog.sgws.org/waldorf-vs-mon…",
+            "indices": [
+              23,
+              46
+            ]
+          }
+        ]
+      },
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "tl"
+    },
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "ED15CD",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/597290042843799552/R7Ix4qza.png",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/597290042843799552/R7Ix4qza.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/806969231338110976/ryrAMI4Y_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/806969231338110976/ryrAMI4Y_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/314408213/1398227159",
+    "profile_link_color": "981CEB",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  {
+    "id": 4924429943,
+    "id_str": "4924429943",
+    "name": "Graphcool",
+    "screen_name": "graphcool",
+    "location": "San Francisco/Berlin",
+    "description": "Flexible backend platform combining GraphQL + AWS Lambda. Setup a GraphQL backend in 5 minutes: https://t.co/6UAvx78Qgr Updates: @GraphcoolStatus",
+    "url": "https://t.co/0Rf5MRXOYd",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/0Rf5MRXOYd",
+            "expanded_url": "http://graph.cool",
+            "display_url": "graph.cool",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": [
+          {
+            "url": "https://t.co/6UAvx78Qgr",
+            "expanded_url": "https://www.graph.cool",
+            "display_url": "graph.cool",
+            "indices": [
+              96,
+              119
+            ]
+          }
+        ]
+      }
+    },
+    "protected": false,
+    "followers_count": 1032,
+    "friends_count": 1159,
+    "listed_count": 31,
+    "created_at": "Wed Feb 17 16:46:16 +0000 2016",
+    "favourites_count": 1077,
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": true,
+    "verified": false,
+    "statuses_count": 202,
+    "lang": "en",
+    "status": {
+      "created_at": "Tue Mar 21 13:26:21 +0000 2017",
+      "id": 844178367347900400,
+      "id_str": "844178367347900418",
+      "text": "RT @VinSpee: I’ve been digging deeply into @graphcool recently. Amazing tool with great docs and community. This was helpful: https://t.co/…",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "VinSpee",
+            "name": "Vince Speelman",
+            "id": 14988794,
+            "id_str": "14988794",
+            "indices": [
+              3,
+              11
+            ]
+          },
+          {
+            "screen_name": "graphcool",
+            "name": "Graphcool",
+            "id": 4924429943,
+            "id_str": "4924429943",
+            "indices": [
+              43,
+              53
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "source": "<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Tue Mar 21 13:25:12 +0000 2017",
+        "id": 844178077496332300,
+        "id_str": "844178077496332288",
+        "text": "I’ve been digging deeply into @graphcool recently. Amazing tool with great docs and community. This was helpful: https://t.co/QZY8Vu4EJe",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "graphcool",
+              "name": "Graphcool",
+              "id": 4924429943,
+              "id_str": "4924429943",
+              "indices": [
+                30,
+                40
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https://t.co/QZY8Vu4EJe",
+              "expanded_url": "https://www.graph.cool/docs/faq/flexibility-and-control-with-graphql-variables-thaexex7av/",
+              "display_url": "graph.cool/docs/faq/flexi…",
+              "indices": [
+                113,
+                136
+              ]
+            }
+          ]
+        },
+        "source": "<a href="http://tapbots.com/software/tweetbot/mac" rel="nofollow">Tweetbot for Mac</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": {
+          "id": "2a236850175551f1",
+          "url": "https://api.twitter.com/1.1/geo/id/2a236850175551f1.json",
+          "place_type": "neighborhood",
+          "name": "Palmer Park",
+          "full_name": "Palmer Park, Detroit",
+          "country_code": "US",
+          "country": "Estados Unidos",
+          "contained_within": [],
+          "bounding_box": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -83.142103,
+                  42.4171528
+                ],
+                [
+                  -83.105373,
+                  42.4171528
+                ],
+                [
+                  -83.105373,
+                  42.4465596
+                ],
+                [
+                  -83.142103,
+                  42.4465596
+                ]
+              ]
+            ]
+          },
+          "attributes": {}
+        },
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 5,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "000000",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/713707735649529856/vONHMN2f_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/713707735649529856/vONHMN2f_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/4924429943/1484833616",
+    "profile_link_color": "27AE60",
+    "profile_sidebar_border_color": "000000",
+    "profile_sidebar_fill_color": "000000",
+    "profile_text_color": "000000",
+    "profile_use_background_image": false,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  }
+]
