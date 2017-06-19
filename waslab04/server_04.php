@@ -16,10 +16,29 @@ function CurrencyConverter($from_Currency,$to_Currency,$amount) {
 
 // Task #4: Implement here the CurrencyConverterPlus function and add it to $server
 
+function CurrencyConverterPlus($in) {
+    $from = $in->from_Currency;
+    $currencies = $in->to_Currencies;
+    $amount = $in->amount;
+    
+    $results = array();
+    
+    for ($i = 0; $i < count($currencies); ++$i) {
+        $res = new StdClass();
+        $currency = $currencies[$i];
+        $res->currency = $currency;
+        $res->amount = CurrencyConverter($from, $currency, $amount);
+        $results[$i] = $res;
+    }
+    return $results;
+};
+
 $server->addFunction("FahrenheitToCelsius");
 
 // Task #3 -> Uncomment the following line:
 $server->addFunction("CurrencyConverter");
+
+$server->addFunction("CurrencyConverterPlus");
 
 $server->handle();
  

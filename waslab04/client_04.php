@@ -34,7 +34,26 @@ try{
 	echo "\n   ", $inAmount, " ",$inCur, " ==> ",$outAmount, " ",$outCur,"\n\n";
 	
 	// Task #4: Call CurrencyConverterPlus and display its result:
+	$inCur = "CNY";
+	$outCurs = array("EUR", "CAD", "PHP", "USD");
+	$inAmount = 1000;
 	
+	$requestObject = new StdClass();
+	$requestObject->from_Currency = $inCur;
+	$requestObject->to_Currencies = $outCurs;
+	$requestObject->amount = $inAmount;
+	
+	$outAmounts = $sClient->CurrencyConverterPlus($requestObject);
+	
+	//var_dump($outAmounts);
+	
+    echo $inCur, " ", $inAmount, "\n";
+    
+    foreach ($outAmounts as $resp) {
+        echo "        ==> ", $resp->amount, " ", $resp->currency, "\n";
+    }
+    
+    echo "\n\n\n\n";
 	
 	
 } catch(SoapFault $e){
