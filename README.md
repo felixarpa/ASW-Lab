@@ -13,7 +13,7 @@ The solutions are not perfect and some are incomplete.
 You can collaborate whenever you want and contribute with your solution.
 Read the **collaborate** section right below.
 
-### Collaborate
+### Contribute
 
 As you will se, there are some sessions that are not finished (just the optional part).
 You can help to future students pushing the solutions you do.
